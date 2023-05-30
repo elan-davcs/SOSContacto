@@ -1,16 +1,18 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { NtfScreen } from '../screens/NtfScreen';
 import { InicioScreen } from '../screens/InicioScreen';
-import { colores, styles } from '../theme/appTheme';
-import { PerfilNavigator } from './PerfilNavigator';
+import { colores } from '../theme/appTheme';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { StyleSheet, Text, View } from 'react-native';
+import { PerfilNavigator } from './PerfilNavigator';
+
 
 const Tab = createMaterialBottomTabNavigator();
 
 export const Tabs = () => {
+  //codigo para los permisos del app
+  
+
   return (
     <Tab.Navigator
       sceneAnimationEnabled={ true }

@@ -3,9 +3,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { PerfilScreen } from '../screens/PerfilScreen';
 import { AgregarScreen } from '../screens/AgregarScreen';
 import { ContactosScreen } from '../screens/ContactosScreen';
-import { RegistroScreen } from '../screens/RegistroScreen';
+import { RegistroScreen } from '../screens/auth/RegistroScreen';
 import { styles } from '../theme/appTheme';
-import { LoginScreen } from '../screens/LoginScreen';
+import { LoginScreen } from '../screens/auth/LoginScreen';
 
 const Stack = createStackNavigator();
 
@@ -15,6 +15,9 @@ export const PerfilNavigator = () => {
       //initialRouteName='Pagina2Screen'
       screenOptions={{ //cambia el color de todas las PantallaScreen
         //headerShown: false, Borrar linea de arriba
+        headerTransparent: true,
+        headerBackTitleVisible: false,
+        headerTitle: "",
         headerStyle: {
           elevation: 0,
         },
